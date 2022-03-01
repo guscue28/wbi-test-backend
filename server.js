@@ -35,7 +35,11 @@ server.listen(serverPort, () => {
 	console.log(`Restfull API server started on: ${serverPort}`)
 })
 
-//Mongoose conection
+// Modelos - Routes
+require('./api/models')
+require('./api/routes')(app)
+
+//Conexión a Mongoose
 mongoose.connect(`mongodb://localhost/shoes`, {
 	keepAlive: 1,
 	useNewUrlParser: true,

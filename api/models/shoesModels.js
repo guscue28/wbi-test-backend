@@ -6,10 +6,9 @@ const ShoesSchema = new Schema({
   name: {
 		type: String,
 	},
-  pictures: [{ 
-		img: String,
-		principal: Boolean
-	}],
+  img: { 
+		type: String,
+	},
 	base64: {
 		type: String
   },
@@ -17,20 +16,17 @@ const ShoesSchema = new Schema({
 		type: Number,
   },
   brand: {
-		type: Schema.Types.ObjectId,
-		ref: 'Brands',
+		type: String,
   },
   model: {
-		type: Schema.Types.ObjectId,
-		ref: 'Model',
+		type: String
   },
   releaseAt: {
 		type: Date,
 		default: '',
   },
   store: {
-		type: Schema.Types.ObjectId,
-		ref: 'Stores',
+		type: String,
   },
 })
 
