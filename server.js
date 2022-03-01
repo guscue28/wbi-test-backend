@@ -40,12 +40,16 @@ require('./api/models')
 require('./api/routes')(app)
 
 //Conexión a Mongoose
-mongoose.connect(`mongodb://localhost/shoes`, {
+mongoose.Promise = global.Promise;
+mongoose.connect(`mongodb://localhost:27017/AllShoes`, {
 	keepAlive: 1,
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
-	useFindAndModify: false
 }).then(db => {
 	console.log(`Connected`)
 	return db
 }).catch(err => console.log(`Error On DB Connect ${err}`))
+
+app.get('/', (req, res) => {
+	res.send(`API V1!`)
+})

@@ -25,9 +25,9 @@ exports.imageToBase64 = async (file) => {
 }
 
 exports.newShoe = (req, res) => {
-  let shoe = new Shoes({
+  const shoe = new Shoes({
     name: req.body.name,
-    img: req.body.name,
+    img: req.body.img,
     price: req.body.price,
     brand: req.body.brand,
     model: req.body.model,
@@ -35,8 +35,15 @@ exports.newShoe = (req, res) => {
     store: req.body.store
   })
 
-  shoe.save((error, addShoe) => {
-    error && res.status(500).send(error.mensage);
-    res.status(200).json(addShoe)
+  shoe.save().then((result) => {
+    res.status(201).json({
+      message: 'Products saved successfuly.',
+      shoe: result,
+     })
+  }).catch((err) => {
+    res.status(400).json({
+      message: 'Failed to save.',
+      error: err.message,
+    })
   })
 }

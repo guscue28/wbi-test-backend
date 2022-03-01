@@ -22,7 +22,7 @@ const ShoesSchema = new Schema({
 		type: String
   },
   releaseAt: {
-		type: Date,
+		type: String,
 		default: '',
   },
   store: {
