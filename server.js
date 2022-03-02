@@ -1,4 +1,8 @@
 'use strict'
+require('dotenv').config()
+const serverPort = process.env.SERVER_PORT || '4000'
+
+
 var express = require("express");
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
@@ -8,7 +12,6 @@ const http = require('http')
 
 
 
-const serverPort = '4000'
 const app = express()
 const server = http.createServer(app)
 
@@ -41,7 +44,7 @@ require('./api/routes')(app)
 
 //Conexión a Mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect(`mongodb://localhost:27017/AllShoes`, {
+mongoose.connect(`${process.env.DB}`, {
 	keepAlive: 1,
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
