@@ -19,11 +19,14 @@ const ShoesSchema = new Schema({
 		type: String
   },
   releaseAt: {
-		type: String,
+		type: Date,
+  },
+  releaseYear: {
+    type: String,
   },
   store: {
     type: Schema.Types.ObjectId,
-    ref: 'stores'
+    ref: 'Stores'
   },
 })
 

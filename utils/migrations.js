@@ -11,7 +11,8 @@ exports.shoes = [
   price: 95,
   brand: 'Adidas',
   model: 'Stan Smith',
-  releaseAt: new Date('Tue Jan 12 2010 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue Jan 12 2010 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Tue Jan 12 2010 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Disney Hulk And Thor Stan Smith',
@@ -19,14 +20,16 @@ exports.shoes = [
   price: 100,
   brand: 'Adidas',
   model: 'Stan Smith',
-  releaseAt: new Date('Sat Aug 02 2014 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Aug 02 2014 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Aug 02 2014 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Disney Monsters, Inc. Stan Smith',
   img: 'Disney_Monsters_Inc._Stan_Smith_White_GZ5990_01_standard.jpg',
   price: 100,
   model: 'Stan Smith',
-  releaseAt: new Date('2022-12-02T04:00:00.000Z').getFullYear(),
+  releaseAt: new Date('2022-12-02T04:00:00.000Z'),
+  releaseYear: new Date('2022-12-02T04:00:00.000Z').getFullYear(),
   store: 'Adidas Oficial',
   brand: 'Adidas' 
 },
@@ -35,7 +38,8 @@ exports.shoes = [
   price: 100,
   brand: 'Adidas',
   model: 'Superstar',
-  releaseAt: new Date('Sat Mar 05 2005 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Mar 05 2005 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Mar 05 2005 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Superstar Black',
@@ -43,7 +47,8 @@ exports.shoes = [
   price: 100,
   brand: 'Adidas',
   model: 'Superstar',
-  releaseAt: new Date('Sun Apr 09 2006 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Apr 09 2006 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Apr 09 2006 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Nike Air Max 95',
@@ -51,7 +56,8 @@ exports.shoes = [
   price: 138,
   brand: 'Nike',
   model: 'Air Max',
-  releaseAt: new Date('1995-07-10T04:00:00.000Z').getFullYear(),
+  releaseAt: new Date('1995-07-10T04:00:00.000Z'),
+  releaseYear: new Date('1995-07-10T04:00:00.000Z').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Air Force 1 07 Craft',
@@ -59,7 +65,8 @@ exports.shoes = [
   price: 120,
   brand: 'Nike',
   model: 'Air Force',
-  releaseAt: new Date('Sat Feb 28 2009 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Feb 28 2009 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Feb 28 2009 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Air Zoom Alphafly',
@@ -67,14 +74,16 @@ exports.shoes = [
   price: 250,
   brand: 'Nike',
   model: 'Air Max',
-  releaseAt: new Date('Sun Nov 20 2011 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Nov 20 2011 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Nov 20 2011 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Air Max 270',
   img: 'Nike-Air-Max-270.jpg',
   price: 150,
   brand: 'Nike',
-  releaseAt: new Date('Tue Mar 12 2019 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue Mar 12 2019 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Tue Mar 12 2019 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial',
   model: 'Air Max' 
 },
@@ -83,7 +92,8 @@ exports.shoes = [
   price: 250,
   brand: 'Nike',
   model: 'Air Zoom',
-  releaseAt: new Date('Thu Jul 15 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Thu Jul 15 2021 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Thu Jul 15 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike ZoomX Vaporfly',
@@ -91,7 +101,8 @@ exports.shoes = [
   price: 200,
   brand: 'Nike',
   model: 'ZoomX',
-  releaseAt: new Date('Sun Jan 05 2020 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Jan 05 2020 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Jan 05 2020 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Air VaporMax Plus',
@@ -99,7 +110,8 @@ exports.shoes = [
   price: 200,
   brand: 'Nike',
   model: 'Air VaporMAx',
-  releaseAt: new Date('Sat Dec 21 2019 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Dec 21 2019 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Dec 21 2019 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Air Max 95 Essential',
@@ -107,7 +119,8 @@ exports.shoes = [
   price: 170,
   brand: 'Nike',
   model: 'Air Max',
-  releaseAt: new Date('Mon Apr 23 2018 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Mon Apr 23 2018 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Mon Apr 23 2018 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike ZoomX Vaporfly NEXT 2',
@@ -115,7 +128,8 @@ exports.shoes = [
   price: 120,
   brand: 'Nike',
   model: 'ZoomX',
-  releaseAt: new Date('Mon Jul 24 2017 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Mon Jul 24 2017 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Mon Jul 24 2017 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nike Adapt BB 2.0',
@@ -123,7 +137,8 @@ exports.shoes = [
   price: 150,
   brand: 'Nike',
   model: 'Adapt',
-  releaseAt: new Date('Mon Jan 25 2016 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Mon Jan 25 2016 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Mon Jan 25 2016 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Nike Oficial' 
 },
 { name: 'Nmd R1 Primeblue',
@@ -131,7 +146,8 @@ exports.shoes = [
   price: 150,
   brand: 'Adidas',
   model: 'Nmd',
-  releaseAt: new Date('Tue May 12 2015 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue May 12 2015 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Tue May 12 2015 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Nizza Hi Rf',
@@ -139,7 +155,8 @@ exports.shoes = [
   price: 90,
   brand: 'Adidas',
   model: 'Nizza',
-  releaseAt: new Date('Tue Sep 24 2013 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue Sep 24 2013 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Tue Sep 24 2013 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Nizza Rf',
@@ -147,7 +164,8 @@ exports.shoes = [
   price: 80,
   brand: 'Adidas',
   model: 'Nizza',
-  releaseAt: new Date('Sat Mar 31 2012 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Mar 31 2012 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Mar 31 2012 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Nizza Rf Slip',
@@ -155,7 +173,8 @@ exports.shoes = [
   price: 65,
   brand: 'Adidas',
   model: 'Nizza',
-  releaseAt: new Date('Wed May 25 2011 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Wed May 25 2011 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Wed May 25 2011 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Forum Mid',
@@ -163,7 +182,8 @@ exports.shoes = [
   price: 77,
   brand: 'Adidas',
   model: 'Mid',
-  releaseAt: new Date('Sat Dec 22 2007 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Dec 22 2007 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Dec 22 2007 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'Adidas Oficial' 
 },
 { name: 'Fresh Foam X 860v12',
@@ -171,7 +191,8 @@ exports.shoes = [
   price: 135,
   brand: 'New Balance',
   model: 'Foam',
-  releaseAt: new Date('Mon Nov 21 2016 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Mon Nov 21 2016 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Mon Nov 21 2016 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'New Balance Oficial' 
 },
 { name: 'Fresh Foam Roav',
@@ -179,7 +200,8 @@ exports.shoes = [
   price: 85,
   brand: 'New Balance',
   model: 'Foam',
-  releaseAt: new Date('Thu Oct 21 2010 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Thu Oct 21 2010 00:00:00 GMT-0430 (hora de Venezuela)'),
+  releaseYear: new Date('Thu Oct 21 2010 00:00:00 GMT-0430 (hora de Venezuela)').getFullYear(),
   store: 'New Balance Oficial' 
 },
 { name: 'Fresh Foam Cruzv1 Reissue',
@@ -187,7 +209,8 @@ exports.shoes = [
   price: 85,
   brand: 'New Balance',
   model: 'Foam',
-  releaseAt: new Date('Thu Jan 21 1999 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Thu Jan 21 1999 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Thu Jan 21 1999 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'New Balance Oficial' 
 },
 { name: 'NB Numeric 272',
@@ -195,7 +218,8 @@ exports.shoes = [
   price: 75,
   brand: 'New Balance',
   model: 'NB',
-  releaseAt: new Date('Sat Sep 28 1996 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sat Sep 28 1996 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sat Sep 28 1996 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'New Balance Oficial' 
 },
 { name: 'FuelCell Shift Tr',
@@ -203,7 +227,8 @@ exports.shoes = [
   price: 100,
   brand: 'New Balance',
   model: 'Shift',
-  releaseAt: new Date('2012-10-03T04:30:00.000Z').getFullYear(),
+  releaseAt: new Date('2012-10-03T04:30:00.000Z'),
+  releaseYear: new Date('2012-10-03T04:30:00.000Z').getFullYear(),
   store: 'New Balance Oficial' 
 },
 { name: 'Air Jordan 1 Low',
@@ -211,7 +236,8 @@ exports.shoes = [
   price: 182,
   brand: 'Jordan',
   model: 'Air Low',
-  releaseAt: new Date('Sun Jan 30 2022 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Jan 30 2022 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Jan 30 2022 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Jordan Oficial' 
 },
 { name: 'Air Jordan 1 Mid ',
@@ -219,15 +245,17 @@ exports.shoes = [
   price: 208,
   brand: 'Jordan',
   model: 'Air Mid',
-  releaseAt: new Date('Tue Jun 15 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue Jun 15 2021 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Tue Jun 15 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Jordan Oficial' 
 },
 { name: 'Air Jordan 4 Retro "White Oreo"',
-  img: 'Air-Jordan-4-Retro-"White-Oreo".webp',
+  img: 'Air-Jordan-4-Retro-White-Oreo.webp',
   price: 540,
   brand: 'Jordan',
   model: 'Retro 4',
-  releaseAt: new Date('Sun Feb 14 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Feb 14 2021 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Feb 14 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Jordan Oficial' 
 },
 { name: 'Air Jordan 1 Retro High J. Balvin "Colores y Vibras"',
@@ -235,7 +263,8 @@ exports.shoes = [
   price: 514,
   brand: 'Jordan',
   model: 'Air High',
-  releaseAt: new Date('Tue Jul 20 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Tue Jul 20 2021 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Tue Jul 20 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Jordan Oficial' 
 },
 { name: 'Air Jordan 11 Retro legend blue',
@@ -243,7 +272,8 @@ exports.shoes = [
   price: 642,
   brand: 'Jordan',
   model: 'Air Retro',
-  releaseAt: new Date('Sun Apr 25 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
+  releaseAt: new Date('Sun Apr 25 2021 00:00:00 GMT-0400 (hora de Venezuela)'),
+  releaseYear: new Date('Sun Apr 25 2021 00:00:00 GMT-0400 (hora de Venezuela)').getFullYear(),
   store: 'Jordan Oficial'
 }
 ]

@@ -25,15 +25,16 @@ exports.listAll = async (req, res) => {
     if (store && store !== '') {
       query.$and.push({store: store})
     }
-    if (releaseAt) {
-      query.$and.push({releaseAt: releaseAt})
+    if (releaseAt && releaseAt !== '') {
+      query.$and.push({releaseYear: releaseAt})
     }
   }
   try {
-    const shoes = await Shoes.find(query).limit(itemsPerPage).skip(itemsPerPage * page)
+    const shoes = await Shoes.find(query).populate('store').limit(itemsPerPage).skip(itemsPerPage * page)
     const count = await Shoes.countDocuments(query)
     res.status(200).json({shoes, count})
   } catch (err) {
+    console.log(err);
     res.status(400).json({
       message: 'An error has ocurred',
       error: err
