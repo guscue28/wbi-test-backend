@@ -1,1 +1,2 @@
 require('./shoesModels')
+require('./storesModels')

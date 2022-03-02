@@ -9,9 +9,6 @@ const ShoesSchema = new Schema({
   img: { 
 		type: String,
 	},
-	base64: {
-		type: String
-  },
   price: {
 		type: Number,
   },
@@ -23,10 +20,10 @@ const ShoesSchema = new Schema({
   },
   releaseAt: {
 		type: String,
-		default: '',
   },
   store: {
-		type: String,
+    type: Schema.Types.ObjectId,
+    ref: 'stores'
   },
 })
 

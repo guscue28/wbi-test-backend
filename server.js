@@ -1,8 +1,6 @@
 'use strict'
+//Importaciones
 require('dotenv').config()
-const serverPort = process.env.SERVER_PORT || '4000'
-
-
 var express = require("express");
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
@@ -10,19 +8,20 @@ const cors = require('cors');
 const path = require('path')
 const http = require('http')
 
-
-
+//Constantes
+const serverPort = process.env.SERVER_PORT || '4000'
 const app = express()
 const server = http.createServer(app)
 
-
+// Configurar cabeceras y cors
+app.use(express.static(path.join(__dirname, 'public')))
+app.use('/public', express.static('public'))
 app.use(bodyParser.json({limit: '1mb'}))
 app.use(bodyParser.urlencoded({
 	parameterLimit: 100000,
 	limit: '1mb',
 	extended: true
 }))
-// Configurar cabeceras y cors
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -49,10 +48,11 @@ mongoose.connect(`${process.env.DB}`, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 }).then(db => {
-	console.log(`Connected`)
+	console.log(`Connected to ${process.env.DB}`)
 	return db
 }).catch(err => console.log(`Error On DB Connect ${err}`))
-
+const appSettingsContoller = require('./api/controlers/appSettingsController')
+appSettingsContoller.migrateData()
 app.get('/', (req, res) => {
 	res.send(`API V1!`)
 })
